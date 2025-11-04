@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay's Care Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Warm, inviting gradient background */
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        }
+
+        /* Glassmorphism container style */
+        .glass-container {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glass-container:hover {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen p-4 sm:p-8">
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Header -->
+        <header class="mb-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white text-shadow-lg"
+                style="text-shadow: 2px 2px 8px rgba(0,0,0,0.2);">
+                Kay's Care Profile
+            </h1>
+            <p class="text-xl text-white opacity-90 mt-2">A resource for consistent, person-centered support.</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Left Column -->
+            <div class="md:col-span-1 space-y-6">
+
+                <!-- About Kay -->
+                <div class="glass-container p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">About Kay</h2>
+
+                    <!-- Kay's Photo -->
+                    <div class="mb-4 flex justify-center">
+                        <img src="https://assets-c4-02.sl-prod.com/image-api/18e539e0-3277-49f3-80e9-7a542b8e5c1e"
+                            alt="Kay Page" class="rounded-lg shadow-md w-full max-w-xs md:max-w-sm">
+                    </div>
+
+                    <p class="text-gray-700 mb-3 text-base">
+                        Kay is a 74 year old female, who lives in Doctor Philips with her supportive husband Bob and their fur baby Missy.
+                    </p>
+                    <p class="text-gray-700 mb-3 text-base">
+                        She is vibrant, expressive, and able to make her needs known.
+                    </p>
+                    <p class="text-gray-700 mb-3 text-base">
+                        Kay wears her eyeglasses at all times. As Alzheimer's affects her visual perception, she sometimes perceives her surroundings differently. To keep Kay safe, caregivers must hold her hands at all times while walking and point things out.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Info:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Has Alzheimer's and can portray dementia-related behaviors, which include and not limited to:
+                            <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                                <li>Behaviors can include anxiety, agitation, confusion, or repeatedly asking for her husband Bob or to go home.</li>
+                                <li>She is usually easy to redirect through reassurance.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Key Support Strategies -->
+                <div class="glass-container p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Support Strategies</h2>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li><span class="font-semibold">Bathing & Dressing:</span> Kay appreciates assistance with choosing outfits and dressing for the day. She loves to look her best!</li>
+                        <li><span class="font-semibold">Bathroom Assistance:</span> She is able to make her needs known but benefits from reminders and assistance locating the toilet in unfamiliar places.</li>
+                        <li><span class="font-semibold">Hydration:</span> Caregiver(s) are encouraged to kindly offer fluids especially water during car rides and walks to ensure Kay remains hydrated.</li>
+                        <li><span class="font-semibold">Restaurant Support:</span> Kay cannot read restaurant menus. Caregivers pick healthy options from the menu.
+                            <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                                <li>She loves a variety of soups, salads, and tea (avoid carbonated beverages like soda).</li>
+                                <li>Caregivers should assist Kay by reading options or pointing them out.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+
+                <!-- Support System -->
+                <div class="glass-container p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Support System</h2>
+                    <p class="text-gray-700 mb-3">
+                        Kay has an RN friend who knows her very well and she is available via phone with any questions or for support.
+                    </p>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Key Contacts:</h3>
+                    <!-- Contact list with text-sm to prevent wrapping -->
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
+                        <li><span class="font-semibold">Bob (Husband):</span> (407) 697-8576</li>
+                        <li><span class="font-semibold">Terry (RN):</span> (781) 460-8856</li>
+                    </ul>
+                </div>
+
+                <!-- Ready-to-Go Kit -->
+                <div class="glass-container p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Ready-to-Go Kit</h2>
+                    <p class="text-gray-600 mb-4">Items carried to ensure Kay is always comfortable:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Hair brush (Kay loves her hair kept neat!)</li>
+                        <li>Dental Floss</li>
+                        <li>Hat (for sunny days)</li>
+                        <li>Sun block</li>
+                        <li>Umbrella</li>
+                        <li>Light jacket (for chilly days)</li>
+                    </ul>
+                </div>
+
+                <!-- Favorites & Preferences -->
+                <div class="glass-container p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Favorites & Preferences</h2>
+                    <div class="flex flex-col space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Favorite Activities</h3>
+                            <ul class="list-disc list-inside space-y-2                       text-gray-700">
+                                <li>Walking at the mall</li>
+                                <li>Nature walks at the trail
+                                    <ul class="list-disc list-inside ml-6 mt-1">
+                                        <li>Note: Kay is a great walker and can enjoy 2-5 miles with breaks.</li>
+                                    </ul>
+                                </li>
+                                <li>Shopping & excursions</li>
+                                <li>Visiting the Farmers Market</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Music & Food</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><span class="font-semibold">Music:</span> Kay enjoys music, especially during car rides. Some of her favorite musicians are:
+                                    <ul class="list-disc list-inside ml-6 mt-1">
+                                        <li>Elvis Presley</li>
+                                        <li>Doris Day</li>
+                                        <li>Louis Armstrong</li>
+                                    </ul>
+                                This should fix the blank screen. Everything should be back to where we left off.
+                                </li>
+                                <li><span class="font-semibold">Food:</span> Enjoys a variety of soups, salads, and tea (avoid carbonated beverages like soda).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
+
